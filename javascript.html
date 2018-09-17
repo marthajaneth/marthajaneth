@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script>
+        var dias = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+
+        //function
+
+        for (k in dias) {
+            console.log(dias[k])
+        }
+        dias.forEach(function(dia) {
+            console.log(dia);
+        })
+        dias.forEach(dia => console.log(dia))
+    </script>
+
+    <script>
+        var number1 = [1, 2, 3, 5, 1 + 9]
+
+        //function
+
+        for (a in number1) {
+            console.log(number1[a])
+        }
+        number1.forEach(function(numero1) {
+            console.log(numero1);
+        })
+        number1.forEach(numero1 => console.log(numero1))
+    </script>
+
+
+    <script>
+        var bool1 = [uno = true, dos = false]
+        var escrito = "texto1"
+        var datos = "texto1"
+        var datos2 = "texto2"
+        var bool1 = [escrito == datos, escrito == datos2]
+
+        //function
+
+        for (b in bool1) {
+            console.log(bool1[b])
+        }
+        bool1.forEach(function(bool) {
+            console.log(bool);
+        })
+        bool1.forEach(bool => console.log(bool))
+    </script>
+
+    <script>
+        var fundaciones = [{
+            nombre: "niños perdidos",
+            identificacion: 100,
+            atencion: "niños, adolescentes",
+            donaciones: {
+                nombre: "nombre",
+                targeta: "numero"
+            }
+        }, {
+            nombre: "abuelos de la nada",
+            identificacion: 98,
+            atencion: "Adultos, abuelos",
+            donaciones: {
+                nombre: "nombre",
+                targeta: "numero"
+
+            },
+
+
+            nombre: "Drogadiccion",
+            identificacion: 74,
+            atencion: "Adolescentes, adultos, abuelos",
+            donaciones: {
+                nombre: "nombre",
+                targeta: "numero"
+            },
+
+            nombre: "Viviendo en la calle",
+            identificacion: 13,
+            atencion: "niños, adolescentes, abuelos",
+            donaciones: {
+                nombre: "nombre",
+                targeta: "numero"
+            }
+        }]
+
+
+
+        //function
+
+        for (c in fundaciones) {
+            console.log(fundaciones[c])
+        }
+        fundaciones.forEach(function(fundacion) {
+            console.log(fundacion);
+        })
+        fundaciones.forEach(fundacion => console.log(fundacion))
+
+
+        var funda = [
+                fundaciones
+            ]
+            //function
+        console.log(funda)
+
+
+
+        function eliminar() {
+            //document.getElementById("lista").children[0].remove();
+            document.getElementsByClassName("prueba-lista")[0].children[1].remove();
+        }
+
+        function adicionar() {
+            //document.getElementById("lista").children[0].add();
+            document.getElementsByClassName("prueba-lista")[0].children[1].add();
+        }
+
+        var funcionUno = function() {
+            var textoEntrada = document.getElementById("texto-entrada").value;
+            console.log(typeof textoEntrada)
+
+            console.log("Se ejecutò la función uno")
+            var nodo = document.createElement("li");
+
+            var textoNodo = document.createTextNode("Elemento de una lista");
+
+            nodo.appendChild(textoNodo);
+
+            document.getElementById("prueba-lista").appendChild(nodo)
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>
+        <center>PRUEBA LISTA eliminar</center>
+    </h1>
+
+    <div class="row">
+        <ul id="lista" class="prueba-lista">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+    </div>
+    <center><button onclick="eliminar()">eliminar</button></center>
+    <br>
+    <h1>
+        <center>PRUEBA LISTA adicionar</center>
+    </h1>
+
+    <hr>
+    <br>
+    <div class="row">
+        <ol>id="prueba lista"
+            <li></li>
+
+        </ol>
+
+
+    </div>
+    <input type="text" id="texto entrada">
+    <button onclick=id="texto entrada()"> 
+    </button>
+
+</body>
+
+</html>
